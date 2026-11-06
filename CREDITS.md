@@ -46,4 +46,23 @@ Changes made to every track: a 30-second section was cut out, each stem was mixe
 - Section used: 2:28 to 2:58
 - Stems used: drums, bass, CleanGuitar, GuitarSolo, organ
 
-Because of the NonCommercial licence on "Broken" and "Must Be Love", this game must stay free, with no ads and no paid features. The clips in `audio/broken/` and `audio/must-be-love/` remain under CC BY-NC 3.0.
+## Hark!
+
+- Artist: unreal_dm
+- Source: https://ccmixter.org/files/unreal_dm/44396
+- Licence: [Creative Commons Attribution-NonCommercial 3.0 (CC BY-NC 3.0)](https://creativecommons.org/licenses/by-nc/3.0/)
+- Composition: "Hark! The Herald Angels Sing" (words Charles Wesley, 1739; music Felix Mendelssohn), public domain. ccMixter lists no samples used.
+- Section used: 0:47 to 1:17
+- Stems used: Bass, Drums, NylonGuitarRT, Piano, Strings, LeadGuitar, Bells
+
+## Amazing Grace (church version)
+
+- Artist: Admiral Bob (admiralbob77), featuring PresentlyLaura
+- Source: https://ccmixter.org/files/admiralbob77/52800
+- Licence: [Creative Commons Attribution-NonCommercial 3.0 (CC BY-NC 3.0)](https://creativecommons.org/licenses/by-nc/3.0/)
+- Uses samples from: "Amazing Grace" by PresentlyLaura, recorded by Madam Snowflake (snowflake), https://ccmixter.org/files/presentlylaura/52764, CC BY-NC 3.0. ccMixter lists no further upstream samples.
+- Composition: "Amazing Grace" (words John Newton, 1779; tune "New Britain", 1829), public domain.
+- Section used: 1:35 to 2:05
+- Stems used: bass, guitar, organ, piano, percussion, sax (from the "Sample" zip) and the separate "vocals" file (admiralbob77_-_Amazing_Grace_(church_version)_2.mp3), which holds PresentlyLaura's vocal as edited by Admiral Bob, with his own vocal in later verses.
+
+Because of the NonCommercial licence on "Broken", "Must Be Love", "Hark!" and "Amazing Grace (church version)", this game must stay free, with no ads and no paid features. The clips in `audio/broken/`, `audio/must-be-love/`, `audio/hark/` and `audio/amazing-grace/` remain under CC BY-NC 3.0.

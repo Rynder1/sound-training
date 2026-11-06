@@ -4,4 +4,4 @@ An ear-training game for audio mixing: spot which instruments are playing, which
 
 Play it at https://rynder1.github.io/sound-training/ (headphones recommended).
 
-All music is from [ccMixter](https://ccmixter.org) under Creative Commons licences; see [CREDITS.md](CREDITS.md). Two songs are CC BY-NC 3.0, so this game stays free with no ads.
+All music is from [ccMixter](https://ccmixter.org) under Creative Commons licences; see [CREDITS.md](CREDITS.md). Four songs (Broken, Must Be Love, Hark! and Amazing Grace) are CC BY-NC 3.0, so this game stays free with no ads.

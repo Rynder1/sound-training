@@ -85,4 +85,42 @@ export const TRACKS = [
 			{ id: "organ", label: "Organ", pan: 0.35 },
 		],
 	},
+	// An instrumental, like Singer Bait.
+	{
+		id: "hark",
+		title: "Hark!",
+		artist: "unreal_dm",
+		source: "https://ccmixter.org/files/unreal_dm/44396",
+		licence: "CC BY-NC 3.0",
+		licenceUrl: "https://creativecommons.org/licenses/by-nc/3.0/",
+		note: "Adaptation of \"Hark! The Herald Angels Sing\" (public domain). Stems: bass, drums, nylon guitar, piano, strings, lead guitar, bells.",
+		stems: [
+			{ id: "drums", label: "Drums", pan: 0 },
+			{ id: "bass", label: "Bass", pan: 0 },
+			{ id: "nylon", label: "Nylon guitar", pan: -0.4 },
+			{ id: "piano", label: "Piano", pan: 0.3 },
+			{ id: "strings", label: "Strings", pan: 0.15 },
+			{ id: "lead", label: "Lead guitar", pan: -0.25 },
+			{ id: "bells", label: "Bells", pan: 0.45, sparse: true },
+		],
+	},
+	// The percussion is light hits throughout, so it is quiet but always there.
+	{
+		id: "amazing-grace",
+		title: "Amazing Grace (church version)",
+		artist: "Admiral Bob (admiralbob77), featuring PresentlyLaura",
+		source: "https://ccmixter.org/files/admiralbob77/52800",
+		licence: "CC BY-NC 3.0",
+		licenceUrl: "https://creativecommons.org/licenses/by-nc/3.0/",
+		note: "Hymn by John Newton (public domain). Uses samples from \"Amazing Grace\" by PresentlyLaura, recorded by Madam Snowflake (snowflake) (https://ccmixter.org/files/presentlylaura/52764, CC BY-NC 3.0). Stems: bass, guitar, organ, piano, percussion, sax, and Admiral Bob's vocal track (PresentlyLaura's acappella with his own vocal).",
+		stems: [
+			{ id: "bass", label: "Bass", pan: 0 },
+			{ id: "organ", label: "Organ", pan: -0.3 },
+			{ id: "piano", label: "Piano", pan: 0.3 },
+			{ id: "guitar", label: "Guitar", pan: -0.45 },
+			{ id: "percussion", label: "Percussion", pan: 0.2 },
+			{ id: "sax", label: "Saxophone", pan: 0.35, sparse: true },
+			{ id: "vocals", label: "Vocals", pan: 0, vocal: true },
+		],
+	},
 ];
