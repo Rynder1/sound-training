@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; media-src 'self'; connect-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+	<meta name="referrer" content="no-referrer">
+	<meta name="theme-color" content="#16181d">
+	<meta name="description" content="Ear training for audio mixing: spot missing instruments, loud instruments and mix problems.">
+	<title>Sound Training</title>
+	<link rel="manifest" href="manifest.json">
+	<link rel="icon" href="icon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="icon-192.png">
+	<link rel="stylesheet" href="style.css">
+	<script type="module" src="js/app.js"></script>
+</head>
+<body>
+	<main>
+		<section id="screen-start" class="screen">
+			<h1>Sound Training</h1>
+			<p class="lead">Ear training for mixing. Each round plays a real multitrack song with something changed. Listen, then answer.</p>
+			<div class="notice">
+				<strong>Use headphones.</strong>
+				<span>Panning, low end and reverb are hard to hear on phone or laptop speakers.</span>
+			</div>
+			<button id="start" class="primary big" type="button">Start</button>
+			<p class="small">Scores are saved only on this device.</p>
+		</section>
+
+		<section id="screen-menu" class="screen" hidden>
+			<h1>Choose a game</h1>
+			<div class="modes">
+				<button class="mode" type="button" data-mode="present"><b>Which instruments?</b><span>Tick every instrument you can hear.</span></button>
+				<button class="mode" type="button" data-mode="loud"><b>Too loud</b><span>One instrument has been turned up. Which one?</span></button>
+				<button class="mode" type="button" data-mode="problem"><b>Spot the problem</b><span>Muddy, thin, harsh, too much reverb, lopsided or clipping?</span></button>
+				<button class="mode" type="button" data-mode="mixed"><b>Mixed</b><span>A random mix of all three.</span></button>
+			</div>
+			<fieldset class="difficulty">
+				<legend>Difficulty</legend>
+				<label><input type="radio" name="difficulty" value="easy"> Easy</label>
+				<label><input type="radio" name="difficulty" value="medium"> Medium</label>
+				<label><input type="radio" name="difficulty" value="hard"> Hard</label>
+				<label><input type="radio" name="difficulty" value="adaptive"> Adaptive</label>
+				<p class="small">Adaptive makes each change smaller when you get it right and bigger when you miss.</p>
+			</fieldset>
+			<div id="stats" class="stats"></div>
+			<div class="row">
+				<button id="show-credits" type="button">Credits</button>
+				<button id="reset-stats" type="button">Reset scores</button>
+			</div>
+		</section>
+
+		<section id="screen-round" class="screen" hidden>
+			<div class="topbar">
+				<button id="back" type="button">&larr; Menu</button>
+				<span id="score" class="score"></span>
+			</div>
+			<p id="track-name" class="small"></p>
+			<h2 id="prompt"></h2>
+			<p id="hint" class="hint"></p>
+			<button id="play" class="primary big" type="button" disabled>Loading&hellip;</button>
+			<p class="small">The clip loops. Some parts only come in for a few seconds, so listen to the whole thing.</p>
+			<div id="options" class="options"></div>
+			<button id="submit" class="primary" type="button" disabled>Check answer</button>
+			<div id="feedback" class="feedback" hidden></div>
+			<div id="ab" class="ab" hidden>
+				<span>Compare:</span>
+				<button id="ab-problem" type="button" aria-pressed="true">Changed mix</button>
+				<button id="ab-clean" type="button" aria-pressed="false">Original mix</button>
+			</div>
+			<button id="next" class="primary" type="button" hidden>Next question</button>
+		</section>
+
+		<section id="screen-credits" class="screen" hidden>
+			<h1>Credits</h1>
+			<p>All music is used under Creative Commons licences. Clips are trimmed to 30 seconds, mixed down to mono stems and re-encoded as MP3. The game changes the mix live while you play.</p>
+			<ul id="credit-list" class="credits"></ul>
+			<button id="credits-back" type="button">&larr; Back</button>
+		</section>
+	</main>
+</body>
+</html>
